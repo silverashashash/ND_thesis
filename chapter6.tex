@@ -1,0 +1,161 @@
+
+%
+% Chapter Six
+%
+
+\chapter{REACTION RATES AND IMPLICATIONS}
+\section{Reaction Rates Calculation}
+As discussed in Chapter 1, the reaction rate for the narrow resonances is given by
+ \begin{equation}
+ \label{eq:rate_1}
+    \begin{aligned}
+         N_A<\sigma v> =( \frac{2 \pi}{\mu k T_9 })^{3/2}h_2 \sum_i(\omega \gamma)_i exp(\frac{-E_{R,i}}{kT_9})
+        \end{aligned}
+\end{equation}
+in units of cm$^3$ s$^{-1}$ mole$^{-1}$, and
+ \begin{equation}
+ \label{eq:rate_2}
+    \begin{aligned}
+         N_A<\sigma v> = 1.54 \times 10^{5} (\mu T_9)^{-3/2} \sum_i (\omega \gamma)_i \frac{-11.605E_{R,i}}{T_9}
+        \end{aligned}
+\end{equation}
+in units of cm$^3$ s$^{-1}$ mole$^{-1}$ if applying the numerical values to the equation above, where $\mu$ refers to the reduced mass, $T_9$ the astrophysical temperature in in units of GK, $ (\omega \gamma)_i$ the resonance strength in the i$^{th}$ resonance in eV, $E_{R,i}$ the resonance energy of the  i$^{th}$ resonance in the center of mass system in MeV, respectively.
+
+To calculate the reaction rate from Eq.\ref{eq:rate_2}, $T_9$ is associated with the effective temperature that  enables the stellar  burning, $E_{R,i}$  is determined by
+ \begin{equation}
+ \label{eq:Er}
+    \begin{aligned}
+    E_{R,i} = E_{x,i} - Q
+        \end{aligned}
+\end{equation}
+where E$_{x,i}$ is the excitation energy of the i$_{th}$ excited states of the compound nuclei and Q is the Q-value of the reaction, i.e. Q = 10.615 MeV in the $^{22}$Ne($\alpha,\gamma$)$^{26}$Mg reaction in this work.
+The resonance strength  $(\omega \gamma)_i$ is given by
+ \begin{equation}
+    \label{eq:strength}
+    \begin{aligned}
+    \omega \gamma_{i} = \frac{2J_{res} + 1}{(2J_1 + 1)(2J_2 + 1)} \frac{\Gamma_{in} \Gamma_{out}}{\Gamma_{tot}}
+        \end{aligned}
+\end{equation}
+where $J_{res}$, $J_1$, $J_2$ refer to the spins of the resonance, the target nuclei $^{22}$Ne (J = 0) and the incoming $\alpha$ particle (J = 0), respectively. The particle widths  $\Gamma$ can be written as $\Gamma_{tot} = \Gamma_\alpha + \Gamma_\gamma$ for neutron bound states and  $\Gamma_{tot} = \Gamma_\alpha + \Gamma_\gamma + \Gamma_n$ for neutron unbound states.
+
+As a result, Eq.\ref{eq:strength} becomes
+ \begin{equation}
+    \label{eq:width_n_bound}
+    \begin{aligned}
+ \omega \gamma_{(\alpha,\gamma)} &= (2J_{res} + 1) \frac{\Gamma_\alpha \Gamma_\gamma }{\Gamma_\alpha + \Gamma_\gamma } \\
+                                & \sim (2J_{res} + 1)\Gamma_\alpha
+        \end{aligned}
+\end{equation}
+for neutron bound states. Because of the large Coulomb barrier for $\alpha$ particles that the approximation $\Gamma_\alpha \ll \Gamma_\gamma , \Gamma_n$ has been made for low energy resonances.
+
+
+Similarly, we obtain neutron unbound states,
+\begin{equation}
+    \label{eq:width_n_unbound1}
+    \begin{aligned}
+ \omega \gamma_{(\alpha,\gamma)} = (2J_{res} + 1) \frac{\Gamma_\alpha }{1+ \Gamma_n/\Gamma_\gamma }
+        \end{aligned}
+\end{equation}
+and
+\begin{equation}
+    \label{eq:width_n_unbound2}
+    \begin{aligned}
+ \omega \gamma_{(\alpha,n)} = (2J_{res} + 1) \frac{\Gamma_\alpha }{1+ \Gamma_\gamma/\Gamma_n }
+        \end{aligned}
+\end{equation}
+
+
+
+Typically spectroscopic factors  are very sensitive to the choice of optical potentials. However, it has been  shown~\citep{Fortune2003} that the width $\Gamma_{exp}$ does not critically depend on the selected potential, owing to  the fact that $\Gamma_{sp}$ also depends on the potential thus canceling most of the potential dependence, as long as both values are extracted with the same potential. In addition, DWBA calculations for transfer reactions to neutron unbound states use the Vincent-Fortune Method~\citep{Vincent1970}. In this method the width of the resonance, instead of the spectroscopic factor, is measured by the absolute magnitude of the cross section. Thus the particle width can be determined in the same theoretical framework where the spectroscopic factor is determined.
+
+
+
+
+The reaction rates of $^{22}$Ne($\alpha$,n)$^{25}$Mg reaction are calculated by Eq.~\ref{eq:rate_2} with the parameters taken from the calculation in Talwar $et\ al.$\citep{Rashi2016} ,as listed in Table.~\ref{tb:rate_para}. The lowest-lying known resonance in the direct measurement has been observed at a c.m. energy of E$_\alpha$ = 702 keV corresponding to an excitation energy in $^{26}$Mg of 11.317 MeV~\citep{Wolke1989}~\citep{Jaeger2001}. The reaction rates corresponding to each individual resonances observed in this work has been normalized to this resonance.   Figure~\ref{fg:rate1} represents the behaviour of the $^{22}$Ne($\alpha,\gamma$)$^{25}$Mg reaction rates as a function of the temperature $T_9$ using the individual resonances 533 keV and 702 keV with several possible spin assignments and $\alpha$-spectroscopic factors obtained in \citep{Rashi2016}. Each resonance shows  similar behaviour in regards of the contribution to the ($\alpha$, $\gamma$) reaction rate.  For $T_9 < $ 0.31, the  four possible 553 keV resonances with different spin-parity assignments listed in Table.~\ref{tb:rate_para} make the similar  amount of contribution to the reaction rate. With higher temperatures, the contribution of 553 keV with $2^+$ and S = 0.44 drops, along with  553 keV ($2^+$, S=0.21) and 553 keV ($2^+$, S=0.99) resonances. Up until   $T_9 < $ 0.34, 553 keV($1^-$, S=0.36) is still the dominant with respect to the 702 keV resonance.
+
+\begin{table}[tpb]
+    \setlength{\capwidth}{0.7\textwidth}
+    \begin{centering}
+       \caption{Resonance parameters taken from Talwar $et\ al.$\citep{Rashi2016} used in the present work for the reaction rate calculation. }
+       \label{tb:rate_para}
+       \begin{tabular}{c c c c c c c c}
+       \toprule
+       \toprule
+              $E_x$        &    $E_R^{c.m.}$ &  $J^{\pi}$  &  $S_{\alpha}$   &    $\Gamma_{sp}$     &   (2J+1)$\Gamma_\alpha$     &    $\omega\gamma_{(\alpha,\gamma)}$  & $\omega\gamma_{(\alpha,n)}$           \\
+              (keV)        &    (keV)       &     &    &  (eV)   &   (eV)  &  (eV)  &   (eV)   \\
+             \hline
+            11167(11)       &    553         &   1$^-$  &  0.36   & 5.00 $\times$ 10$^{-07}$   & 5.4(7) $\times$ 10$^{-07}$  & 5.4(7) $\times$ 10$^{-07}$ & $\leq$6 $\times$ 10$^{-08}$   \\
+                           &                &   2$^+$  &  0.99   & 8.78 $\times$ 10$^{-08}$   & 4.4(5) $\times$ 10$^{-07}$  & 4.4(5) $\times$ 10$^{-07}$ & $\leq$ 6 $\times$ 10$^{-08}$   \\
+                            &                 &   1$^-$  &  0.44   & 5.00 $\times$ 10$^{-07}$   & 6.6(7) $\times$ 10$^{-07}$  & 6.6(7) $\times$ 10$^{-07}$ &$\leq$ 6 $\times$ 10$^{-08}$   \\
+                            &                &   2$^+$  &  0.21   & 8.78 $\times$ 10$^{-08}$   & 5.3(7) $\times$ 10$^{-07}$  & 5.3(7) $\times$ 10$^{-07}$ & $\leq$6 $\times$ 10$^{-08}$   \\
+               11317(11)       &    702        &   1$^-$  &  0.43   & 1.18 $\times$ 10$^{-04}$   & 1.5(2) $\times$ 10$^{-04}$  & 3.7(4) $\times$ 10$^{-05}$ & 1.2(1)$\times$ 10$^{-04}$   \\
+                            &                  &   2$^+$  &  1.44   & 2.15 $\times$ 10$^{-05}$   & 1.5(2) $\times$ 10$^{-04}$  & 3.7(4) $\times$ 10$^{-05}$ & 1.2(1)$\times$ 10$^{-04}$   \\
+
+             \hline
+         \hline
+       \end{tabular}
+     \end{centering}
+\end{table}
+
+Despite of the resonance parameters, the errors of the variables in Eq.~\ref{eq:rate_2} also affect the magnitude of the values of the calculated reaction rates. According to  Mao~\cite{Mao1996}, there is a model dependence uncertainty of about 30\%  in $\Gamma_\alpha$ between  different $r_0$ values that are used to calculate the single particle widths in the DWBA model. As shown in Figure.~\ref{fg:ag_1}, adding the model dependence error of 30\% to the reaction rates gives the magnitude of the reaction rate of the individual resonance 553 keV with respect to the 702 keV resonance.
+
+Another uncertainty that may affect the upper limits of the reaction rates comes from the uncertainty of the resonance energies. Talwar\citep{Rashi2016} measured the ($\alpha$, n) and ($\alpha$, $\gamma$) reaction rates with large error in the resonance energy with respect to the (d,p) measurements (error of 18 keV for the 703 keV resonance, compared to the error of 11 keV in this work). In this work the energy error of the resonance is 11 keV and the best error measured so far is about 3 keV~\citep{26mgaa2017}. To see how the uncertainty of the resonance energies affect the reaction rates, 3 keV and 18 keV are applied to the calculation, respectively.  As  shown in Fig.~\ref{fg:ag_2}, the left panel gives the result for the resonance with the error of 18 keV and the right panel shows the error of 3 keV. It is clearly seen that there are   dramatic differences between the larger  and the smaller uncertainties in the resonance energy. This is because   E$_{R}$ is in the exponential term in Eq.~\ref{eq:rate_2}, which also leads to the fact that the lower reaction rate ratio on the left plot drops to negative at about T$_9$ = 0.25.
+
+In addition to the 553 keV resonance, in this work 13 resonances are observed between the $\alpha$ threshold and the lowest observed resonance by the $^{22}$Ne + $\alpha$ system. Amongst these resonances, contributions from the resonances at 374 keV ($E_x=$ 10.988(11) MeV), 455 keV ($E_x=$ 11.069(10) MeV) and 553  keV ($E_x=$ 11.165(11) MeV)  are not negligible because they are possibly associated with $E_x=$ 10.095(21) MeV, 11.085(8) MeV and 11.167 MeV with $S_{\alpha}$s obtained in ~\citep{Rashi}. Their reaction rates to the 702 keV are plotted in Fig.~\ref{fg:ag_a}. It is shown at For T$_9 <$ 0.3, the 553 keV is the dominant resonance to the ($\alpha, \gamma$) rate. When stellar temperature  drops down to about T$_9 <$ 0.23, the 347 keV resonance begins to contribute significantly  to the rate. When T$_9$ keeps going down to about T$_9 <$ 0.18, the 455 keV resonance starts to contribute significantly to the ($\alpha, \gamma$) reaction rate, and  the 374 keV resonance gradually replaces the 553 keV and becomes to the dominant resonance in the $^{22}$Ne($\alpha, \gamma$)$^{26}$Mg reaction.
+
+
+
+
+
+
+
+%Table~\ref{tb:res} listed the resonances above the $\alpha$ threshold and the corresponding parameters observed in this work that contribute to the reaction rates up to E$_\alpha$ = 703 keV.
+
+
+
+
+
+
+\begin{figure}[tpb]
+  \begin{center}
+    \centerline{\includegraphics[scale=0.8]{graph/ch6/an_rate}}
+    \caption{The reaction rate ratio of ($\alpha$, $\gamma$) calculated from several possible spin parity assignments of 553 keV resonance ($1^-$, S=0.36), normalized to the 702 keV resonance, the lowest observed resonance from the direct measurement.}
+    \label{fg:rate1}
+  \end{center}
+\end{figure}
+
+
+
+
+\begin{figure}[tpb]
+  \begin{center}
+    \centerline{\includegraphics[scale=0.8]{graph/ch6/ag_1}}
+    \caption{The uncertainty band  of the reaction rate ratio of ($\alpha$, $\gamma$)   calculated for the 552 keV resonance ($1^-$, S=0.36), normalized to the 702 keV resonance. The colored band represents is the error band of from the model dependent error of  30\%.}
+    \label{fg:ag_1}
+  \end{center}
+\end{figure}
+
+
+\begin{figure}[tpb]
+  \begin{center}
+    \centerline{\includegraphics[scale=1.5]{graph/ch6/ag_2}}
+    \caption{The uncertainty band  of the reaction rate ratio of ($\alpha$, $\gamma$)   calculated from the 552 keV resonance ($1^-$, S=0.36), normalized to the 702 keV resonance.  The left panel (a) shows the light blue error band of 18 keV on the 702 keV resonance and the right panel (b) shows the light blue error band of 3 keV. }
+    \label{fg:ag_2}
+  \end{center}
+\end{figure}
+
+\begin{figure}[tpb]
+  \begin{center}
+    \centerline{\includegraphics[scale=0.8]{graph/ch6/ag_a}}
+    \caption{The reaction rate ratios of  ($\alpha$, $\gamma$) ), calculated from the  374 keV (red line), 455 keV (yellow line) and 553 keV (blue line)  resonances, respectively, normalized to the 702 keV resonance.}
+    \label{fg:ag_a}
+  \end{center}
+\end{figure}
+%\section{Astrophysical Implication}
+
+
+% % uncomment the following lines,
+% if using chapter-wise bibliography
+%
+% \bibliographystyle{ndnatbib}
+% \bibliography{example}
