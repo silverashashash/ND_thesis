@@ -36,7 +36,7 @@
 \ProvidesClass{nddiss2e}
     [2016/10/16 v3.2016%
      Template file for NDdiss2e class]
-\documentclass[final,sort&compress]{nddiss2e}
+\documentclass[review,sort&compress]{nddiss2e}
                      % One of the options draft, review, final must be chosen.
                      % One of the options textrefs or numrefs should be chosen
                      % to specify if you want numerical or ``author-date''
@@ -58,6 +58,7 @@
 \usepackage{threeparttablex}
 \usepackage{supertabular}
 \usepackage{longtable}
+\usepackage{ amssymb }
 
 \begin{document}
 
@@ -157,7 +158,8 @@
 %\bibliography{reference}         % input the bib-database file name
 
 
-\bibliographystyle{unsrtnat}
+\bibliographystyle{unsrt}
+%\bibliographystyle{unsrtnat}
 \bibliography{reference}
 
 \end{document}
